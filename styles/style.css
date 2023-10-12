@@ -15,12 +15,13 @@ h1, h2 {
     /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Roboto Condensed', sans-serif;
     /*font-family: 'Source Serif 4', serif;*/
-
 }
+
 
 a.logo, a.logo:hover, a.logo:visited {
     color: brown; /* Цвет логотипа */
     font-weight: 600;
+    font-family: 'Noto Serif', serif;
 }
 
 .logo {
