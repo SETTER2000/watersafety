@@ -170,6 +170,7 @@ footer > .container, header {
     max-width: 380px;
     float: right;
     margin: 0 0 10px 10px;
+    border: 12px solid #8f8e8e52;
 }
 
 .im2 {
@@ -189,3 +190,6 @@ li.truncate{
     background-size: 70px;
 }
 
+p.null{
+    padding-bottom: 0;
+}
