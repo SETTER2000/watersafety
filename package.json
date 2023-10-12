@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "name": "water_safety",
+  "description": "Проектная работа по созданию простого HTML сайта с использованием  http-server **** ## Зависимости [Установить  Node.js](https://nodejs.org/dist/v18.18.1/node-v18.18.1-x64.msi)",
+  "version": "0.1.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
