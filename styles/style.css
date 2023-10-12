@@ -18,27 +18,30 @@ h1, h2 {
 
 }
 
+a.logo, a.logo:hover, a.logo:visited {
+    color: brown; /* Цвет логотипа */
+    font-weight: 600;
+}
+
 .logo {
+    padding-left: 80px;
     float: left;
     text-transform: uppercase;
     color: brown;
     font-size: 40pt;
-    font-weight: 500;
+    background: url("/img/apple-touch-icon.png") no-repeat;
+    background-size: 70px;
 }
 
-a.logo, a.logo:hover, a.logo:visited {
-    color: brown; /* Цвет логотипа */
-    font-weight: 500;
-}
 
 a:visited {
     color: #8F8E8E; /* Цвет посещённой ссылки */
 }
 
-a:hover, .sidebar a:hover {
+a:hover, .sidebar a:hover, .truncate a:hover  {
     color: brown; /* Цвет ссылки при наведении */
     text-decoration: none; /* Добавляем подчёркивание */
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 nav {
@@ -46,7 +49,7 @@ nav {
     line-height: 60px;
 }
 
-nav a, .sidebar a {
+nav a, .sidebar a, truncate  a {
     text-decoration: none;
     color: #463d3d;
 }
@@ -69,9 +72,11 @@ nav li {
     margin: 0 auto;
 
 }
+
 .content {
     min-height: calc(100vh - 80px);
 }
+
 .container:after {
     content: "";
     display: table;
@@ -88,6 +93,12 @@ nav li {
     margin: 0;
 }
 
+a.copyright {
+    background: url("/img/apple-touch-icon.png") no-repeat;
+    background-size: 22px;
+    padding-left: 29px;
+}
+
 .col-1-2 {
     width: 50%;
 }
@@ -98,15 +109,15 @@ nav li {
 
 }
 
- .col-1-4 {
+.col-1-4 {
     width: 25%;
-     display: inline-block;
+    display: inline-block;
 
 }
 
- .col-3-4 {
+.col-3-4 {
     width: 70%;
-     display: inline-block;
+    display: inline-block;
 }
 
 .col-2-3 {
@@ -133,16 +144,18 @@ p {
     border-left-style: groove;
     padding: 8px 10px 8px 13px;
     margin-left: 25px;
-    background-color: #a52a2a08;
+    background-color: #a52a2a1a;
 }
 
 
 footer > .container, header {
     border-top: 2px solid #a52a2a47;
 }
+
 .footer {
     flex: 0 0 auto;
 }
+
 .right {
     text-align: right;
     margin-right: 20px;
@@ -151,5 +164,28 @@ footer > .container, header {
 .contact-data li {
     display: inline-block; /*один из способов разместить элементы в строку*/
     padding: 3px;
+}
+
+.im {
+    max-width: 380px;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.im2 {
+    max-width: 680px;
+}
+
+.truncate {
+    padding: 5px; /* Поля вокруг текста */
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+li.truncate{
+    min-height: 100px;
+    padding: 80px 0 0 0px;
+     background: url("/img/apple-touch-icon.png") no-repeat;
+    background-size: 70px;
 }
 
